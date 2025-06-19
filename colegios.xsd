@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="codigoAsignatura">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z]{3}[0-9]{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="codigoAlumno">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z]{1}[0-9]{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="nivelEducativo">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Primaria"/>
+      <xs:enumeration value="Secundaria"/>
+      <xs:enumeration value="Bachillerato"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="Colegios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Colegio" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Codigo" type="xs:string"/>
+              <xs:element name="Nombre1" type="xs:string"/>
+              <xs:element name="Nombre2" type="xs:string"/>
+              <xs:element name="Direccion" type="xs:string"/>
+              <xs:element name="Telefono" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="Alumnos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Alumno" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Codigo" type="codigoAlumno"/>
+                    <xs:element name="Nombre" type="xs:string"/>
+                    <xs:element name="GradoDeEstudio" type="nivelEducativo"/>
+                    <xs:element name="NotaPromedio" type="xs:decimal"/>
+                  </xs:sequence>
+                  <xs:attribute name="activo" type="xs:boolean" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="Profesores">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Profesor" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Codigo" type="xs:string"/>
+                    <xs:element name="Nombre" type="xs:string"/>
+                    <xs:element name="Telefono" type="xs:string"/>
+                  </xs:sequence>
+                  <xs:attribute name="titular" type="xs:boolean" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="Asignaturas">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Asignatura" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Codigo" type="codigoAsignatura"/>
+                    <xs:element name="Nombre" type="xs:string"/>
+                    <xs:element name="Creditos" type="xs:integer"/>
+                  </xs:sequence>
+                  <xs:attribute name="obligatoria" type="xs:boolean" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

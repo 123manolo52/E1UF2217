@@ -1,112 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="colegios.xsl"?>
-<Colegios>
-    <Colegio>
-        <Codigo>COL123</Codigo>
-        <Nombre1>Colegio San Juan</Nombre1>
-        <Nombre2>Colegio Las Palmas</Nombre2>
-        <Direccion>Calle Leon y Castillo, Las Palmas</Direccion>
-        <Telefono>928123456</Telefono>
-    </Colegio>
-    
-    <Colegio>
-        <Codigo>COL456</Codigo>
-        <Nombre1>Colegio Tenerife Norte</Nombre1>
-        <Nombre2>Colegio Santa Cruz</Nombre2>
-        <Direccion>Avenida Tres de Mayo, Santa Cruz de Tenerife</Direccion>
-        <Telefono>922654321</Telefono>
-    </Colegio>
+<Colegios xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="colegios.xsd">
 
-    <Alumnos>
-        <Alumno>
-            <Codigo>ALU001</Codigo>
-            <Nombre>Pablo Hernandez</Nombre>
-            <GradoDeEstudio>Secundaria</GradoDeEstudio>
-            <NotaPromedio>3.5</NotaPromedio>
-        </Alumno>
-        <Alumno>
-            <Codigo>ALU002</Codigo>
-            <Nombre>Maria Gutierrez</Nombre>
-            <GradoDeEstudio>Primaria</GradoDeEstudio>
-            <NotaPromedio>9.0</NotaPromedio>
-        </Alumno>
-        <Alumno>
-            <Codigo>ALU003</Codigo>
-            <Nombre>Carlos Dominguez</Nombre>
-            <GradoDeEstudio>Secundaria</GradoDeEstudio>
-            <NotaPromedio>7.8</NotaPromedio>
-        </Alumno>
-        <Alumno>
-            <Codigo>ALU004</Codigo>
-            <Nombre>Laura Santana</Nombre>
-            <GradoDeEstudio>Bachillerato</GradoDeEstudio>
-            <NotaPromedio>8.9</NotaPromedio>
-        </Alumno>
-        <Alumno>
-            <Codigo>ALU005</Codigo>
-            <Nombre>Javier Suarez</Nombre>
-            <GradoDeEstudio>Primaria</GradoDeEstudio>
-            <NotaPromedio>7.5</NotaPromedio>
-        </Alumno>
-        <Alumno>
-            <Codigo>ALU006</Codigo>
-            <Nombre>Elena Ramos</Nombre>
-            <GradoDeEstudio>Bachillerato</GradoDeEstudio>
-            <NotaPromedio>9.2</NotaPromedio>
-        </Alumno>
-        <Alumno>
-            <Codigo>ALU007</Codigo>
-            <Nombre>Fernando Gonzalez</Nombre>
-            <GradoDeEstudio>Secundaria</GradoDeEstudio>
-            <NotaPromedio>8.0</NotaPromedio>
-        </Alumno>
-        <Alumno>
-            <Codigo>ALU008</Codigo>
-            <Nombre>Andrea Cabrera</Nombre>
-            <GradoDeEstudio>Primaria</GradoDeEstudio>
-            <NotaPromedio>9.3</NotaPromedio>
-        </Alumno>
-        <Alumno>
-            <Codigo>ALU009</Codigo>
-            <Nombre>Daniel Ortega</Nombre>
-            <GradoDeEstudio>Bachillerato</GradoDeEstudio>
-            <NotaPromedio>8.7</NotaPromedio>
-        </Alumno>
-    </Alumnos>
+  <Colegio>
+    <Codigo>COL123</Codigo>
+    <Nombre1>Colegio San Juan</Nombre1>
+    <Nombre2>Colegio Las Palmas</Nombre2>
+    <Direccion>Calle Leon y Castillo, Las Palmas</Direccion>
+    <Telefono>928123456</Telefono>
+  </Colegio>
+  <Colegio>
+    <Codigo>COL456</Codigo>
+    <Nombre1>Colegio Tenerife Norte</Nombre1>
+    <Nombre2>Colegio Santa Cruz</Nombre2>
+    <Direccion>Avenida Tres de Mayo, Santa Cruz de Tenerife</Direccion>
+    <Telefono>922654321</Telefono>
+  </Colegio>
 
-    <Profesores>
-        <Profesor>
-            <Codigo>PRO001</Codigo>
-            <Nombre>Ricardo Moreno</Nombre>
-            <Telefono>928654321</Telefono>
-        </Profesor>
-        <Profesor>
-            <Codigo>PRO002</Codigo>
-            <Nombre>Sandra Martin</Nombre>
-            <Telefono>928987654</Telefono>
-        </Profesor>
-        <Profesor>
-            <Codigo>PRO003</Codigo>
-            <Nombre>Antonio Perez</Nombre>
-            <Telefono>928567890</Telefono>
-        </Profesor>
-    </Profesores>
+  <Alumnos>
+    <Alumno activo="true">
+      <Codigo>A001</Codigo>
+      <Nombre>Pablo Hernandez</Nombre>
+      <GradoDeEstudio>Secundaria</GradoDeEstudio>
+      <NotaPromedio>3.5</NotaPromedio>
+    </Alumno>
+    <Alumno activo="true">
+      <Codigo>M002</Codigo>
+      <Nombre>Maria Gutierrez</Nombre>
+      <GradoDeEstudio>Primaria</GradoDeEstudio>
+      <NotaPromedio>9.0</NotaPromedio>
+    </Alumno>
+    <Alumno activo="true">
+      <Codigo>C003</Codigo>
+      <Nombre>Carlos Dominguez</Nombre>
+      <GradoDeEstudio>Secundaria</GradoDeEstudio>
+      <NotaPromedio>7.8</NotaPromedio>
+    </Alumno>
+    <Alumno activo="true">
+      <Codigo>L004</Codigo>
+      <Nombre>Laura Santana</Nombre>
+      <GradoDeEstudio>Bachillerato</GradoDeEstudio>
+      <NotaPromedio>8.9</NotaPromedio>
+    </Alumno>
+    <Alumno activo="true">
+      <Codigo>J005</Codigo>
+      <Nombre>Javier Suarez</Nombre>
+      <GradoDeEstudio>Primaria</GradoDeEstudio>
+      <NotaPromedio>7.5</NotaPromedio>
+    </Alumno>
+    <Alumno activo="true">
+      <Codigo>E006</Codigo>
+      <Nombre>Elena Ramos</Nombre>
+      <GradoDeEstudio>Bachillerato</GradoDeEstudio>
+      <NotaPromedio>9.2</NotaPromedio>
+    </Alumno>
+    <Alumno activo="true">
+      <Codigo>F007</Codigo>
+      <Nombre>Fernando Gonzalez</Nombre>
+      <GradoDeEstudio>Secundaria</GradoDeEstudio>
+      <NotaPromedio>8.0</NotaPromedio>
+    </Alumno>
+    <Alumno activo="true">
+      <Codigo>A008</Codigo>
+      <Nombre>Andrea Cabrera</Nombre>
+      <GradoDeEstudio>Primaria</GradoDeEstudio>
+      <NotaPromedio>9.3</NotaPromedio>
+    </Alumno>
+    <Alumno activo="true">
+      <Codigo>D009</Codigo>
+      <Nombre>Daniel Ortega</Nombre>
+      <GradoDeEstudio>Bachillerato</GradoDeEstudio>
+      <NotaPromedio>8.7</NotaPromedio>
+    </Alumno>
+  </Alumnos>
 
-    <Asignaturas>
-        <Asignatura>
-            <Codigo>MAT101</Codigo>
-            <Nombre>Matematicas</Nombre>
-            <Creditos>4</Creditos>
-        </Asignatura>
-        <Asignatura>
-            <Codigo>HIS202</Codigo>
-            <Nombre>Historia</Nombre>
-            <Creditos>3</Creditos>
-        </Asignatura>
-        <Asignatura>
-            <Codigo>CIE303</Codigo>
-            <Nombre>Ciencias</Nombre>
-            <Creditos>5</Creditos>
-        </Asignatura>
-    </Asignaturas>
+  <Profesores>
+    <Profesor titular="true">
+      <Codigo>PRO001</Codigo>
+      <Nombre>Ricardo Moreno</Nombre>
+      <Telefono>928654321</Telefono>
+    </Profesor>
+    <Profesor titular="false">
+      <Codigo>PRO002</Codigo>
+      <Nombre>Sandra Martin</Nombre>
+      <Telefono>928987654</Telefono>
+    </Profesor>
+    <Profesor titular="false">
+      <Codigo>PRO003</Codigo>
+      <Nombre>Antonio Perez</Nombre>
+      <Telefono>928567890</Telefono>
+    </Profesor>
+  </Profesores>
+
+  <Asignaturas>
+    <Asignatura obligatoria="true">
+      <Codigo>MAT101</Codigo>
+      <Nombre>Matematicas</Nombre>
+      <Creditos>4</Creditos>
+    </Asignatura>
+    <Asignatura obligatoria="true">
+      <Codigo>HIS202</Codigo>
+      <Nombre>Historia</Nombre>
+      <Creditos>3</Creditos>
+    </Asignatura>
+    <Asignatura obligatoria="false">
+      <Codigo>CIE303</Codigo>
+      <Nombre>Ciencias</Nombre>
+      <Creditos>5</Creditos>
+    </Asignatura>
+  </Asignaturas>
 </Colegios>
